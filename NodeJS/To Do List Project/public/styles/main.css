@@ -1,0 +1,36 @@
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Apply the animation to an element with the class 'animated-gradient' */
+.animated-gradient {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #ffffff, #633cff, #000000, #8e02c5);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+
+
+.submittion-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    height: 10vh;
+}
+
+.material-icons{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 6px;
+}
