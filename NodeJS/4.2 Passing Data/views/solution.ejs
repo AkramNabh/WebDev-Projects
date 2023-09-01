@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+
+<body>
+
+  <%# the if condition is to check the availability of the variable
+    and this method is very effective to render specific stuff while the
+    variable is still empty.
+  %>
+  <% if (locals.letterNumber) { %>
+    <h1>There are <%= letterNumber %> letters in your name.</h1>
+    <% } else { %>
+      <h1>Enter your name below 👇</h1>
+      <% } %>
+        <form action="/submit" method="POST">
+          <input type="text" name="fName" placeholder="First name">
+          <input type="text" name="lName" placeholder="Last name">
+          <input type="submit" value="OK">
+        </form>
+</body>
+
+</html>
