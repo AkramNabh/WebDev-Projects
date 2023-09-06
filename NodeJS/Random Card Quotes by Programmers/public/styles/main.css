@@ -1,0 +1,203 @@
+body{
+    /* Created with https://www.css-gradient.com */
+    background: #161616;
+    }
+    h1{
+      color:#fff;
+    }
+    .lead{
+      color:#aaa;
+    }
+    
+    .wrapper{margin:10vh}
+  
+    
+    .card{
+        display: flex;
+        
+      border: none;
+      transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+     overflow:hidden;
+     border-radius:20px;
+     min-height:450px;
+       box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+    
+     @media (max-width: 768px) {
+      min-height:350px;
+    }
+    
+    @media (max-width: 420px) {
+      min-height:300px;
+    }
+    
+     &.card-has-bg{
+     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+      background-size:120%;
+      background-repeat:no-repeat;
+      background-position: center center;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: inherit;
+        -webkit-filter: grayscale(1);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);}
+    
+      &:hover {
+        transform: scale(0.98);
+         box-shadow: 0 0 5px -2px rgba(0,0,0,0.3);
+        background-size:130%;
+         transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    
+        .card-img-overlay {
+          transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+          background: rgb(255,186,33);
+         background: linear-gradient(0deg, rgba(255,186,33,0.5) 0%, rgba(255,186,33,1) 100%);
+         }
+      }
+    }
+     .card-footer{
+      background: none;
+       border-top: none;
+        .media{
+         img{
+           border:solid 3px rgba(255,255,255,0.3);
+         }
+       }
+     }
+      .card-title{
+        font-weight:800
+      }
+     .card-meta{color:rgba(0,0,0,0.3);
+      text-transform:uppercase;
+       font-weight:500;
+       letter-spacing:2px;}
+     .card-body{ 
+       transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+     
+    
+      }
+     &:hover {
+       .card-body{
+         margin-top:30px;
+         transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+       }
+     cursor: pointer;
+     transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+     .card-img-overlay {
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+     background: rgb(255,186,33);
+    background: linear-gradient(0deg, rgba(255,186,33,0.3785889355742297) 0%, rgba(255,186,33,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    }
+    @media (max-width: 767px){
+      
+    }
+
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .media{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+ /*  the button over here  */
+    body,
+html {
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #111e6c;
+  /* Try using a background image
+  background: url('images/frontPageBackground.jpg');*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1s ease;
+}
+.main:before {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  /*background: #111e6c;*/
+  opacity: 0.2;
+  filter: alpha(opacity=90);
+}
+.main-text {
+  top: 20%;
+  left: auto;
+  right: auto;
+  position: relative;
+  color: #111e6c;
+}
+.btn-circle,
+#to-top {
+  border-radius: 50%;
+  background: rgb(211, 172, 82); 
+  padding: 6px;
+  font-size: 14px;
+  /* border-radius: 50%; */
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.c2a-btn {
+  margin: 48px auto 0;
+  margin: 1.8rem auto 0;
+}
+
+.btn-default {
+  color: #fff;
+  /* first one is for the background / second is for the borders */
+  background-color: rgb(211, 172, 82);  
+  border-color: rgb(211, 172, 82); 
+  transition: all 1s ease;
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  padding: 18px 28px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 50px;
+}
+
+.btn-group .btn-or {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  box-shadow: 0;
+  border: 2px solid #fff;
+}
