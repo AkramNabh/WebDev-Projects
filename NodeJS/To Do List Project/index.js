@@ -16,6 +16,7 @@ app.post("/submit",(req, res)=>{
         task: req.body["TheTask"],
         title: req.body["TheTitle"]
     });
+    console.log(req.body["TheTask"]);
 })
 
 
