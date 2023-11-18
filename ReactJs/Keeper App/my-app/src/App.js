@@ -1,13 +1,8 @@
 import React from 'react';
-import Header from './Components/Header.jsx'
-import Footer from './Components/Footer.jsx'
-import Note from './Components/Note.jsx'
-function App() {
+const App = () =>{
   return (
     <div>
-    <Header />
-    <Note />
-    <Footer />
+      <h1>thats the beginning of the portfolio</h1>
     </div>
   );
 }
